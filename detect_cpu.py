@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-# Loading YOLOv8 model (pre-trained from Roboflow)
+# Loading YOLOv8 model 
 model = YOLO("yolov8n.pt") 
 
 # Training the model on my dataset
