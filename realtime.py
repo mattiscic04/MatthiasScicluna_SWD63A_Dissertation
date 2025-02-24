@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 # Load trained YOLOv8 model
-model = YOLO("runs/detect/train2/weights/best.pt") 
+model = YOLO("runs/detect/train3/weights/best.pt") 
 
 # Opens the webcam / iphone camera
 cap = cv2.VideoCapture(0)
@@ -10,9 +10,7 @@ cap = cv2.VideoCapture(0)
 class_labels = {
     0: "AM4",
     1: "AM5",
-    2: "LGA-1150",
-    3: "LGA-1700",
-    4: "Not Clear"
+    2: "LGA-1700",
 }
 
 while cap.isOpened():
