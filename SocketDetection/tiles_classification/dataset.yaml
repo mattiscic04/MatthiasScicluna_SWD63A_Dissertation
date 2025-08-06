@@ -1,0 +1,6 @@
+path: C:/Users/matth/OneDrive/Desktop/Thesis code/tiles_classification
+train: train
+val: val
+names:
+  0: OK
+  1: Faulty
