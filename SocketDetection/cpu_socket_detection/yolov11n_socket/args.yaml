@@ -1,19 +1,19 @@
-task: classify
+task: detect
 mode: train
-model: yolov8n-cls.pt
-data: C:\Users\matth\OneDrive\Desktop\Thesis code\tiles_classification\dataset.yaml
+model: C:\Users\matth\Downloads\yolo11n.pt
+data: C:\Users\matth\Downloads\Matthias_Scicluna_Thesis_SWD6.3A.v7i.yolov11\data.yaml
 epochs: 50
 time: null
 patience: 100
 batch: 16
-imgsz: 128
+imgsz: 640
 save: true
 save_period: -1
 cache: false
 device: cpu
-workers: 8
-project: pin_fault_classification
-name: yolov8n_tile_classifier
+workers: 0
+project: cpu_socket_detection
+name: yolov11n_socket
 exist_ok: true
 pretrained: true
 optimizer: auto
@@ -102,4 +102,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: pin_fault_classification\yolov8n_tile_classifier
+save_dir: cpu_socket_detection\yolov11n_socket
